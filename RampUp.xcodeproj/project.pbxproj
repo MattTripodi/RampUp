@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0BC92E1FB5482A008D7F0E /* ramps.scn in Resources */ = {isa = PBXBuildFile; fileRef = EE0BC92D1FB5482A008D7F0E /* ramps.scn */; };
 		EEF5B0D71FB53B530041E373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5B0D61FB53B530041E373 /* AppDelegate.swift */; };
 		EEF5B0D91FB53B540041E373 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF5B0D81FB53B540041E373 /* art.scnassets */; };
-		EEF5B0DB1FB53B540041E373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5B0DA1FB53B540041E373 /* ViewController.swift */; };
+		EEF5B0DB1FB53B540041E373 /* RampPlacerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5B0DA1FB53B540041E373 /* RampPlacerVC.swift */; };
 		EEF5B0DE1FB53B540041E373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF5B0DC1FB53B540041E373 /* Main.storyboard */; };
 		EEF5B0E01FB53B540041E373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF5B0DF1FB53B540041E373 /* Assets.xcassets */; };
 		EEF5B0E31FB53B540041E373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF5B0E11FB53B540041E373 /* LaunchScreen.storyboard */; };
+		EEF5B0EC1FB541C70041E373 /* RampPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5B0EB1FB541C70041E373 /* RampPickerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE0BC92D1FB5482A008D7F0E /* ramps.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = ramps.scn; path = art.scnassets/ramps.scn; sourceTree = "<group>"; };
 		EEF5B0D31FB53B530041E373 /* RampUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RampUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF5B0D61FB53B530041E373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEF5B0D81FB53B540041E373 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		EEF5B0DA1FB53B540041E373 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EEF5B0DA1FB53B540041E373 /* RampPlacerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPlacerVC.swift; sourceTree = "<group>"; };
 		EEF5B0DD1FB53B540041E373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEF5B0DF1FB53B540041E373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEF5B0E21FB53B540041E373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEF5B0E41FB53B540041E373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEF5B0EB1FB541C70041E373 /* RampPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPickerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		EEF5B0D51FB53B530041E373 /* RampUp */ = {
 			isa = PBXGroup;
 			children = (
+				EEF5B0EA1FB53D4F0041E373 /* Controller */,
 				EEF5B0D61FB53B530041E373 /* AppDelegate.swift */,
 				EEF5B0D81FB53B540041E373 /* art.scnassets */,
-				EEF5B0DA1FB53B540041E373 /* ViewController.swift */,
 				EEF5B0DC1FB53B540041E373 /* Main.storyboard */,
 				EEF5B0DF1FB53B540041E373 /* Assets.xcassets */,
 				EEF5B0E11FB53B540041E373 /* LaunchScreen.storyboard */,
 				EEF5B0E41FB53B540041E373 /* Info.plist */,
+				EE0BC92D1FB5482A008D7F0E /* ramps.scn */,
 			);
 			path = RampUp;
+			sourceTree = "<group>";
+		};
+		EEF5B0EA1FB53D4F0041E373 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EEF5B0DA1FB53B540041E373 /* RampPlacerVC.swift */,
+				EEF5B0EB1FB541C70041E373 /* RampPickerVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +144,7 @@
 				EEF5B0E31FB53B540041E373 /* LaunchScreen.storyboard in Resources */,
 				EEF5B0E01FB53B540041E373 /* Assets.xcassets in Resources */,
 				EEF5B0DE1FB53B540041E373 /* Main.storyboard in Resources */,
+				EE0BC92E1FB5482A008D7F0E /* ramps.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEF5B0DB1FB53B540041E373 /* ViewController.swift in Sources */,
+				EEF5B0DB1FB53B540041E373 /* RampPlacerVC.swift in Sources */,
+				EEF5B0EC1FB541C70041E373 /* RampPickerVC.swift in Sources */,
 				EEF5B0D71FB53B530041E373 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
